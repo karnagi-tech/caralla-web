@@ -364,7 +364,7 @@
               <h2 class="s-titleDet">INQUIRE ABOUT THIS VEHICLE</h2>
               <div class="b-detail__main-aside-about-call">
                 <span class="fa fa-phone"></span>
-                <div>1-888-378-4027</div>
+                div #{phone}
                 <p>Call the seller 24/7 and they would help you.</p>
               </div>
               <div class="b-detail__main-aside-about-seller">
@@ -375,21 +375,19 @@
                   <a href="#" class="j-tab m-active s-lineDownCenter" data-to='#form1'>GENERAL INQUIRY</a>
                   <a href="#" class="j-tab" data-to='#form2'>SCHEDULE TEST DRIVE</a>
                 </div>
-                <form id="form1" action="/" method="post">
+                <form id="form1" action="#" method="get">
                   <input type="text" placeholder="YOUR NAME" value="" name="name" />
                   <input type="email" placeholder="EMAIL ADDRESS" value="" name="email" />
                   <input type="tel" placeholder="PHONE NO." value="" name="name" />
                   <textarea name="text" placeholder="message"></textarea>
                   <div><input type="checkbox" name="one" value="" /><label>Send me a copy of this message</label></div>
-                  <div><input type="checkbox" name="two" value="" /><label>Send me a copy of this message</label></div>
-                  <button type="submit" class="btn m-btn">SEND MESSAGE<span class="fa fa-angle-right"></span></button>
+                  <button type="button" class="btn m-btn">SEND MESSAGE<span class="fa fa-angle-right"></span></button>
                 </form>
-                <form id="form2" action="/" method="post">
+                <form id="form2" action="#" method="post">
                   <input type="text" placeholder="YOUR NAME" value="" name="name" />
                   <textarea name="text" placeholder="message"></textarea>
                   <div><input type="checkbox" name="one" value="" /><label>Send me a copy of this message</label></div>
-                  <div><input type="checkbox" name="two" value="" /><label>Send me a copy of this message</label></div>
-                  <button type="submit" class="btn m-btn">SEND MESSAGE<span class="fa fa-angle-right"></span></button>
+                  <button type="button" class="btn m-btn">SEND MESSAGE<span class="fa fa-angle-right"></span></button>
                 </form>
               </div>
             </div>
