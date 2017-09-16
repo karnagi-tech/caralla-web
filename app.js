@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var home = require('./routes/home');
 var about = require('./routes/about');
+var contact = require('./routes/contact');
 //var index = require('./routes/index');
 //var users = require('./routes/users');
 
@@ -37,6 +38,7 @@ app.use('/static', express.static(path.join(__dirname, 'public'), static_options
 
 app.use('/', home);
 app.use('/about', about);
+app.use('/contact', contact);
 //app.use('/newindex', index);
 //app.use('/users', users);
 
