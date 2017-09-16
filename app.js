@@ -12,6 +12,8 @@ var guide = require('./routes/guide');
 var howitworks = require('./routes/howitworks');
 var benefits = require('./routes/benefits');
 var details = require('./routes/details');
+var sellcar = require('./routes/sellcar');
+var buycar = require('./routes/buycar');
 
 var app = express();  
 
@@ -45,6 +47,8 @@ app.use('/guide', guide);
 app.use('/howitworks', howitworks);
 app.use('/benefits', benefits);
 app.use('/details', details);
+app.use('/sellcar', sellcar);
+app.use('/buycar', buycar);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
