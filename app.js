@@ -6,10 +6,11 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var home = require('./routes/home');
-var index = require('./routes/index');
+var about = require('./routes/about');
+//var index = require('./routes/index');
 //var users = require('./routes/users');
 
-var app = express();
+var app = express();  
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -35,7 +36,8 @@ var static_options = {
 app.use('/static', express.static(path.join(__dirname, 'public'), static_options));
 
 app.use('/', home);
-app.use('/newindex', index);
+app.use('/about', about);
+//app.use('/newindex', index);
 //app.use('/users', users);
 
 // catch 404 and forward to error handler
