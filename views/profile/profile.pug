@@ -1,0 +1,14 @@
+extends ../templates/caralla_layout
+
+block content
+  include header.pug
+  case moduleurl
+    when 'signin'
+      include form_signin.pug
+    when 'register'
+      include form_register.pug
+    default
+      include form_forgotpassword.pug
+  
+  include ../templates/info.pug
+  

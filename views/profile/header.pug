@@ -1,0 +1,24 @@
+<section class="b-pageHeader">
+  <div class="container">
+    <h1 class="wow zoomInLeft" data-wow-delay="0.7s">
+      span #{moduletitle}
+    </h1>
+    <div class="b-pageHeader__search wow zoomInRight" data-wow-delay="0.7s">
+      h3 #{moduledescription}
+    </div>
+  </div>
+</section><!--b-pageHeader-->
+
+<div class="b-breadCumbs s-shadow">
+  <div class="container">
+    <a href="/" class="b-breadCumbs__page">Home</a><span class="fa fa-angle-right"></span>
+    case moduleurl
+      when 'signin'
+        <a href="/signin" class="b-breadCumbs__page m-active">Sign In</a>
+      when 'register'
+        <a href="/register" class="b-breadCumbs__page m-active">Register</a>
+      default
+        <a href="/forgotpassword" class="b-breadCumbs__page m-active">Forgot Password</a>
+    
+  </div>
+</div><!--b-breadCumbs-->
